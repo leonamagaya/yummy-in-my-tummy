@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<div class="row justify-content-center my-5">
+  <div class="col-lg-6">
+      <form action>
+        <label for="recipe-title" class="form-label">Recipe Title:</label>
+        <input type="text" class="form-control" id="recipe-title" placeholder="e.g.Chocolate Cake">
+
+        <label for="author" class="form-label">Author:</label>
+        <input type="text" class="form-control" id="author" placeholder="e.g.Leona Magaya">
+
+        <label for="date" class="form-label">Date:</label>
+        <input type="date" class="form-control" id="date" placeholder="e.g.date">
+
+        <label for="baked-goods-type" class="form-label"> Type of Baked Product </label>
+        <select class="form-select" id="baked-goods-type">
+          <option value="pies-and-pastries" selected>Pies and Pastries</option>
+          <option value="quick-breads">Quick Breads</option>
+          <option value="cakes">Cakes</option>
+          <option value="cookies">Cookies</option>
+          <option value="yeast-breads">Yeast Breads</option>
+          <option value="other">other</option>
+        </select>
+
+        <label for="recipe" class="form-label">Your recipe...</label>
+        <textarea name="recipe" id="recipe" class="form-control" style="height: 100px"></textarea>
+      </form>
+    </div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,39 @@
+.nav-text {
+  font-family: 'Dancing Script', cursive;
+  font-size:xx-large !important; 
+} 
+
+.nav-link {
+  color: palevioletred;
+}
+
+.btn {
+  background-color: palevioletred;
+  
+}
+
+.about {
+  position: relative;
+  color: white;
+  text-shadow: .1em .1em .1em rgba(0, 0, 0, .3);
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("/images/food-flat-lay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  opacity: 0.20
+}
+
+.about-text {
+  position: relative;
+}
+
+

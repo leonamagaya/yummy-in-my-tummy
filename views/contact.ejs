@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+
+<section id="contact">
+  <div class="container">
+    <div class="text-center">
+      <h1>Get in Touch</h1>
+      <p class="lead">Questions to ask? Fill out the form to contact us...</p>
+    </div>
+
+    <div class="row justify-content-center my-5">
+    <div class="col-lg-6">
+        <form action>
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="e.g.Leona">
+
+          <label for="email" class="form-label">Email address:</label>
+          <input type="email" class="form-control" id="email" placeholder="e.g.leona@gmail.com">
+
+          <label for="subject" class="form-label"> What is your question about?</label>
+          <select class="form-select" id="subject">
+            <option value="recipes" selected>Recipes</option>
+            <option value="content">Content</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message" class="form-label">Your message...</label>
+          <textarea name="" id="" class="form-control" style="height: 100px"></textarea>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<%- include("partials/footer.ejs") %> 
